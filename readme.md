@@ -33,7 +33,7 @@
 
 3. **获取验证码并填入：**
    - 如果选了「网址前缀」，请复制形如 `<meta name="google-site-verification" content="XXXXXXXXX" />` 的代码。
-   - 目前已填入：`kF9JG8IwoChYoWkJwBZcYYuqr63S9wcz46ioVG1YHgc`。
+   - 目前已填入：`bOrXy7_sYc-b0dgPdr3660uuyFYofkg1DekzWHlx-LA`。
 4. 部署代码后，点击「验证」。
 5. 进入「站点地图」提交：
    - `https://json-gamma-three.vercel.app/sitemap.xml`
