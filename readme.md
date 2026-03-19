@@ -1,6 +1,6 @@
 # GOOGLE工具：上线后 SEO 发布与 Google AdSense 接入指南
 
-当前线上地址：https://jsonchanger.com/
+当前线上地址：https://json-gamma-three.vercel.app/
 
 ## 你现在已经完成了什么
 
@@ -14,37 +14,31 @@
 
 ### 1.1 自检：这些地址必须能在公网直接打开
 
-- https://jsonchanger.com/
-- https://jsonchanger.com/robots.txt
-- https://jsonchanger.com/sitemap.xml
-- https://jsonchanger.com/privacy.html
-- https://jsonchanger.com/terms.html
+- https://json-gamma-three.vercel.app/
+- https://json-gamma-three.vercel.app/robots.txt
+- https://json-gamma-three.vercel.app/sitemap.xml
+- https://json-gamma-three.vercel.app/privacy.html
+- https://json-gamma-three.vercel.app/terms.html
 
 如果任意一个打不开，先修复再做下一步（Search Console/AdSense 都依赖这些页面可访问）。
 
 ### 1.2 Google Search Console 提交收录
 
 1. 打开 Google Search Console → 添加资源
-2. **选择资源类型（根据你的需求填写）：**
+2. **选择资源类型（目前推荐）：**
 
-   - **左侧：网域 (Domain)**
-     - **怎么写**：只填根域名 `jsonchanger.com`（不要带 `https://`，不要带 `/`）
-     - **优点**：一次验证即可覆盖所有子域名（www, m. 等）和 http/https。
-     - **验证**：**必须**去域名商那里添加 DNS TXT 记录（生效较慢）。
-
-   - **右侧：网址前缀 (URL prefix)** —— **【推荐现在使用】**
-     - **怎么写**：必须带协议 `https://jsonchanger.com/`（建议以 `/` 结尾）
-     - **优点**：支持多种验证方式，**HTML 标签验证**通常秒级生效。
-     - **验证**：选择「HTML 标记」，获取代码填入 `index.html`。
+   - **右侧：网址前缀 (URL prefix)**
+     - **怎么写**：必须带协议 `https://json-gamma-three.vercel.app/`
+     - **优点**：支持 HTML 标记验证，秒级生效。
 
 3. **获取验证码并填入：**
    - 如果选了「网址前缀」，请复制形如 `<meta name="google-site-verification" content="XXXXXXXXX" />` 的代码。
-   - 将代码发送给 AI，或直接粘贴到 `index.html` 的第 23 行。
+   - 目前已填入：`kF9JG8IwoChYoWkJwBZcYYuqr63S9wcz46ioVG1YHgc`。
 4. 部署代码后，点击「验证」。
 5. 进入「站点地图」提交：
-   - `https://jsonchanger.com/sitemap.xml`
+   - `https://json-gamma-three.vercel.app/sitemap.xml`
 6. 进入「网址检查」输入：
-   - `https://jsonchanger.com/`
+   - `https://json-gamma-three.vercel.app/`
    - 点「请求编入索引」
 
 ## 2. Google AdSense 接入（已完成配置）
@@ -70,15 +64,16 @@
 
 ### 3.1 推送代码并部署
 - 将当前修改提交并推送至 GitHub/Vercel。
-- 确保部署成功后，访问 `https://jsonchanger.com/` 确认页面正常加载。
+- 确保部署成功后，访问 `https://json-gamma-three.vercel.app/` 确认页面正常加载。
 
 ### 3.2 Google Search Console 验证
-- 在 GSC 后台点击 **「验证」**。
-- 验证通过后，在 **「站点地图」** 菜单提交 `https://jsonchanger.com/sitemap.xml`。
+- 在 GSC 后台输入 `https://json-gamma-three.vercel.app/`。
+- 点击 **「验证」**。
+- 验证通过后，在 **「站点地图」** 菜单提交 `https://json-gamma-three.vercel.app/sitemap.xml`。
 
 ### 3.3 Google AdSense 站点审核
 - 登录 [Google AdSense](https://adsense.google.com/)。
-- 进入 **「站点」** 菜单，选择 `jsonchanger.com`。
+- 进入 **「站点」** 菜单，添加 `json-gamma-three.vercel.app`。
 - 点击 **「申请审核」**。
 - **注意**：审核通常需要 3-14 天。在审核通过前，广告位会显示为空白。
 
@@ -86,6 +81,6 @@
 
 ## 4. 后续维护指南
 
-- **更换域名**：需同步更新 `index.html` 的 canonical/og:url、`robots.txt`、`sitemap.xml`。
+- **添加自定义域名**：当 `jsonchanger.com` 调通后，需同步更新 `index.html` 的 canonical/og:url、`robots.txt`、`sitemap.xml`。
 - **添加新工具**：建议在 `index.html` 中保持一致的 UI 风格和广告位布局。
 
